@@ -1,0 +1,24 @@
+{
+  "name": "pdi-svg-generator",
+  "version": "1.0.0",
+  "description": "Svg generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Alexander Kotinov",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^5.7.0",
+    "d3-fetch": "^1.1.2",
+    "dom-parser": "^0.1.5",
+    "express": "^4.16.4",
+    "jsdom": "^13.0.0",
+    "node-fetch": "^2.3.0",
+    "node-fetch-polyfill": "^2.0.6",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "simple-svg-tools": "^1.1.12",
+    "xmldom": "^0.1.27"
+  }
+}
