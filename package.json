@@ -2,7 +2,7 @@
   "name": "pdi-svg-generator",
   "version": "1.0.0",
   "description": "Svg generator",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "test"
   },
