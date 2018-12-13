@@ -1,15 +1,23 @@
 const express = require('express');
 const app = express();
 const request = require('request-promise');
-const composite = require('./generators/composite');
+const generator = require('./generators/graphicsGenerator');
 const env = require('./.env');
 
-const PORT = 3003;
+const PORT = 53216;
 
+app.get('/', (req, res) => {
+  return res.send('PDI svg generator');
+});
 
 app.get('/generate', (req, res) => {
-  const data = composite.compositeGenerator(req.query.type, req.query.coords);
-  return res.status(200).send(data);
+  const data = generator.graphicsGenerator(req.query.type, req.query.coordinates);
+
+  if (data) {
+    return res.status(200).send(data);
+  } else {
+    return res.status(400).send('Graphics data incorrect!');
+  }
 });
 
 app.use('/assets', express.static(__dirname + '/assets'));

@@ -19,6 +19,7 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "simple-svg-tools": "^1.1.12",
+    "underscore": "^1.9.1",
     "xmldom": "^0.1.27"
   }
 }
